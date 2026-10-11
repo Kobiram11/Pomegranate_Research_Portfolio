@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light only">
+  <meta name="description" content="Research portfolio of group R26-IT-087, SLIIT: An AI-Based Intelligent Farming System for Improving Pomegranate Yield and Quality.">
+  <title>R26-IT-087 | Pomegranate Intelligent Farming Research</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='18' r='12' fill='%23a3203a'/%3E%3Cpath d='M12 6h8l-2 4h-4z' fill='%233f7d4e'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="R26-IT-087 research portfolio, go to Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-id" data-bind="project.groupId"></span>
+          <span class="brand-sub">Pomegranate Research</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#domain">Domain</a></li>
+          <li><a href="#milestones">Milestones</a></li>
+          <li><a href="#documents">Documents</a></li>
+          <li><a href="#presentations">Presentations</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- 1. HOME -->
+    <section id="home" class="hero" aria-labelledby="home-title">
+      <div class="container hero-inner">
+        <p class="eyebrow"><span data-bind="project.groupId"></span> · <span data-bind="project.module"></span></p>
+        <h1 id="home-title" data-bind="project.title"></h1>
+        <p class="hero-identity">
+          <span data-bind="project.department"></span>, <span data-bind="project.faculty"></span><br>
+          <span data-bind="project.institution"></span>
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#domain">Explore the Domain</a>
+          <a class="btn btn-outline" href="#documents">View Documents</a>
+          <a class="btn btn-ghost" href="#about">About Us</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="hero-grid">
+          <article class="card abstract-card">
+            <h2>Abstract</h2>
+            <p data-bind="project.abstract"></p>
+          </article>
+          <aside class="card facts-card" aria-labelledby="facts-title">
+            <h2 id="facts-title">Group identity</h2>
+            <dl id="project-facts" class="facts"></dl>
+          </aside>
+        </div>
+        <h2 class="subheading">Research overview</h2>
+        <div id="overview-cards" class="grid grid-3"></div>
+        <h2 class="subheading">Research components</h2>
+        <div id="home-components" class="grid grid-4"></div>
+      </div>
+    </section>
+
+    <!-- 2. DOMAIN -->
+    <section id="domain" class="section section-cream" aria-labelledby="domain-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Research domain</p>
+          <h2 id="domain-title">Domain</h2>
+          <p class="section-lead">The background, gap, problem, objectives, methodology and technologies of the research.</p>
+        </header>
+        <nav class="subnav" aria-label="Domain topics">
+          <a href="#literature">Literature survey</a>
+          <a href="#gap">Research gap</a>
+          <a href="#problem">Research problem</a>
+          <a href="#objectives">Objectives</a>
+          <a href="#methodology">Methodology</a>
+          <a href="#components">Components</a>
+          <a href="#technologies">Technologies</a>
+        </nav>
+
+        <div id="literature" class="domain-block">
+          <h3>Literature survey</h3>
+          <div id="literature-list" class="grid grid-2"></div>
+          <details class="references">
+            <summary>References</summary>
+            <ol id="reference-list"></ol>
+          </details>
+        </div>
+
+        <div class="grid grid-2 domain-pair">
+          <div id="gap" class="domain-block card">
+            <h3>Research gap</h3>
+            <ul id="gap-list" class="tick-list"></ul>
+          </div>
+          <div id="problem" class="domain-block card">
+            <h3>Research problem</h3>
+            <ul id="problem-list" class="tick-list"></ul>
+          </div>
+        </div>
+
+        <div id="objectives" class="domain-block">
+          <h3>Research objectives</h3>
+          <div class="card objective-main">
+            <h4>Main objective</h4>
+            <p id="objective-main"></p>
+          </div>
+          <h4 class="minor-heading">Specific objectives</h4>
+          <ol id="objective-list" class="number-list"></ol>
+        </div>
+
+        <div id="methodology" class="domain-block">
+          <h3>Methodology</h3>
+          <ol id="method-steps" class="steps"></ol>
+        </div>
+
+        <div id="components" class="domain-block">
+          <h3>Research components and responsibilities</h3>
+          <p class="muted">Each component is an individual research contribution with its own inputs, methods and evaluation.</p>
+          <div id="component-list" class="component-list"></div>
+        </div>
+
+        <div id="technologies" class="domain-block">
+          <h3>Technologies used</h3>
+          <ul id="tech-list" class="tech-grid"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. MILESTONES -->
+    <section id="milestones" class="section" aria-labelledby="milestones-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Assessment schedule</p>
+          <h2 id="milestones-title">Milestones</h2>
+          <p class="section-lead">Assessment stages of the research project with dates, allocated marks and current status.</p>
+        </header>
+        <ol id="timeline" class="timeline"></ol>
+
+        <div class="card assessment-picker">
+          <h3>Assessment details</h3>
+          <label for="assessment-select">Choose an assessment</label>
+          <select id="assessment-select"></select>
+          <div id="assessment-detail" class="assessment-detail" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. DOCUMENTS -->
+    <section id="documents" class="section section-cream" aria-labelledby="documents-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Google Drive</p>
+          <h2 id="documents-title">Documents</h2>
+          <p class="section-lead">Group and individual documents for each assessment stage. Files are stored on Google Drive.</p>
+        </header>
+
+        <form class="filters card" id="doc-filters" role="search" aria-label="Filter documents">
+          <div class="filter-field filter-search">
+            <label for="doc-search">Search by title</label>
+            <input type="search" id="doc-search" placeholder="e.g. proposal, thesis" autocomplete="off">
+          </div>
+          <div class="filter-field">
+            <label for="doc-category">Category</label>
+            <select id="doc-category"><option value="all">All categories</option></select>
+          </div>
+          <div class="filter-field">
+            <label for="doc-type">Group / Individual</label>
+            <select id="doc-type">
+              <option value="all">All</option>
+              <option value="group">Group</option>
+              <option value="individual">Individual</option>
+            </select>
+          </div>
+          <div class="filter-field">
+            <label for="doc-member">Member</label>
+            <select id="doc-member"><option value="all">All members</option></select>
+          </div>
+          <div class="filter-field filter-reset">
+            <button type="reset" class="btn btn-ghost btn-small">Clear filters</button>
+          </div>
+        </form>
+        <div class="category-chips" id="category-chips" role="group" aria-label="Quick category filter"></div>
+        <p id="doc-count" class="result-count" aria-live="polite"></p>
+        <div id="doc-list" class="grid grid-3 doc-grid"></div>
+
+        <div class="folder-panel">
+          <h3>Drive folders</h3>
+          <p class="muted">Browse the shared folders directly. The site lists only files that have been added to the configuration.</p>
+          <ul id="folder-list" class="folder-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PRESENTATIONS -->
+    <section id="presentations" class="section" aria-labelledby="presentations-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Slides</p>
+          <h2 id="presentations-title">Presentations</h2>
+          <p class="section-lead">Slides presented at each assessment stage.</p>
+        </header>
+        <div id="presentation-list" class="grid grid-2"></div>
+      </div>
+    </section>
+
+    <!-- 6. ABOUT US -->
+    <section id="about" class="section section-cream" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Our team</p>
+          <h2 id="about-title">About Us</h2>
+          <p class="section-lead">The supervisory panel and research group members of <span data-bind="project.groupId"></span>.</p>
+        </header>
+        <h3 class="subheading">Supervisor</h3>
+        <div id="supervisor-list" class="grid grid-2 people-grid"></div>
+        <h3 class="subheading">Co-supervisor</h3>
+        <div id="cosupervisor-list" class="grid grid-2 people-grid"></div>
+        <h3 class="subheading">Research group members</h3>
+        <div id="member-list" class="grid grid-2 people-grid"></div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT US -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Get in touch</p>
+          <h2 id="contact-title">Contact Us</h2>
+          <p class="section-lead">Use the template below to write to the research group from your own email app.</p>
+        </header>
+        <div class="grid grid-contact">
+          <div class="card">
+            <h3>Group contact details</h3>
+            <dl id="contact-details" class="facts"></dl>
+            <h4 class="minor-heading">Members</h4>
+            <ul id="contact-members" class="contact-members"></ul>
+          </div>
+          <form class="card email-form" id="email-form" novalidate>
+            <h3>Email template</h3>
+            <div class="filter-field">
+              <label for="email-to">To</label>
+              <input type="email" id="email-to" autocomplete="off">
+              <p class="hint" id="email-to-hint"></p>
+            </div>
+            <div class="filter-field">
+              <label for="email-subject">Subject</label>
+              <input type="text" id="email-subject">
+            </div>
+            <div class="filter-field">
+              <label for="email-body">Message</label>
+              <textarea id="email-body" rows="9"></textarea>
+            </div>
+            <a id="mailto-link" class="btn btn-primary" href="mailto:">Open email app</a>
+            <p class="hint">This opens your device's email app with the message filled in. Nothing is sent from this website.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong data-bind="project.groupId"></strong> · <span data-bind="project.title"></span></p>
+      <p><span data-bind="project.department"></span>, <span data-bind="project.institution"></span></p>
+      <p><a href="#home">Back to top</a></p>
+    </div>
+  </footer>
+
+  <script src="data/content.js"></script>
+  <script src="data/drive-links.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
