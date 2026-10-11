@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light only">
   <meta name="description" content="Research portfolio of group R26-IT-087, SLIIT: An AI-Based Intelligent Farming System for Improving Pomegranate Yield and Quality.">
   <title>R26-IT-087 | Pomegranate Intelligent Farming Research</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='18' r='12' fill='%23a3203a'/%3E%3Cpath d='M12 6h8l-2 4h-4z' fill='%233f7d4e'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2313315c'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -15,7 +15,10 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#home" aria-label="R26-IT-087 research portfolio, go to Home">
-        <span class="brand-mark" aria-hidden="true"></span>
+        <!-- LOGO: upload the logo to the Drive "Photos" folder, then remove the comment marks
+             around the next line and replace LOGO_FILE_ID (see README, section "Logo").
+        <img class="brand-logo" src="https://lh3.googleusercontent.com/d/LOGO_FILE_ID=w200" alt="" width="44" height="44">
+        -->
         <span class="brand-text">
           <span class="brand-id">R26-IT-087</span>
           <span class="brand-sub">Pomegranate Research</span>
@@ -41,20 +44,26 @@
          1. HOME
          ===================================================== -->
     <section id="home" class="hero" aria-labelledby="home-title">
-      <div class="container hero-inner">
-        <p class="eyebrow">R26-IT-087 · IT4010 Research Project – 2026</p>
-        <h1 id="home-title">An AI-Based Intelligent Farming System for Improving Pomegranate Yield and Quality</h1>
-        <p class="hero-identity">
-          Department of Information Technology, Faculty of Computing<br>
-          Sri Lanka Institute of Information Technology (SLIIT)
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#domain">Explore the Domain</a>
-          <a class="btn btn-outline" href="#documents">View Documents</a>
-          <a class="btn btn-ghost" href="#about">About Us</a>
+      <div class="hero-banner">
+        <div class="container hero-inner">
+          <p class="hero-tag"><span class="hero-tag-id">R26-IT-087</span> IT4010 Research Project · 2026</p>
+          <h1 id="home-title">An AI-Based Intelligent Farming System for Improving Pomegranate Yield and Quality</h1>
+          <p class="hero-lead">An integrated IoT and image-based machine learning system that supports pomegranate cultivation decisions, from soil monitoring to post-harvest fruit grading.</p>
+          <p class="hero-identity">Department of Information Technology · Faculty of Computing · Sri Lanka Institute of Information Technology (SLIIT)</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#domain">Explore the Domain</a>
+            <a class="btn btn-light" href="#documents">View Documents</a>
+            <a class="btn btn-outline-light" href="#about">About Us</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>4</strong><span>Research components</span></li>
+            <li><strong>4</strong><span>Group members</span></li>
+            <li><strong>IoT + AI</strong><span>Soil sensing and image analysis</span></li>
+            <li><strong>AIMS</strong><span>Research group</span></li>
+          </ul>
         </div>
       </div>
-      <div class="container">
+      <div class="container hero-content">
         <div class="hero-grid">
           <article class="card abstract-card">
             <h2>Abstract</h2>
@@ -74,22 +83,25 @@
 
         <h2 class="subheading">Research overview</h2>
         <div class="grid grid-3">
-          <article class="card overview-card">
+          <article class="card overview-card accent-red">
+            <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 21h20L12 3z"/><path d="M12 10v5"/><path d="M12 18h.01"/></svg></span>
             <h3>Problem area</h3>
             <p>Farmers depend on manual practices, have limited knowledge of soil, irrigation and nutrient levels, detect diseases late, and lack tools to monitor fruit growth or grade fruit consistently.</p>
           </article>
-          <article class="card overview-card">
+          <article class="card overview-card accent-blue">
+            <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></span>
             <h3>Approach</h3>
             <p>An integrated system that uses IoT sensors for soil data and image-based deep learning for fruit analysis, supporting decisions from soil monitoring to post-harvest grading.</p>
           </article>
-          <article class="card overview-card">
+          <article class="card overview-card accent-green">
+            <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-5 4-9 16-9 0 12-4 16-9 16z"/><path d="M4 20c3-4 6-7 10-9"/></svg></span>
             <h3>Expected contribution</h3>
             <p>Clear, component-specific decision support that aims to reduce crop loss, reduce fruit waste and encourage careful use of water and fertilizer.</p>
           </article>
         </div>
 
         <h2 class="subheading">Research components</h2>
-        <div class="grid grid-4">
+        <div class="grid grid-4 mini-components">
           <article class="card mini-component">
             <h3><a href="#c-growth">Fruit Growth Stage Detection and Harvest Time Prediction</a></h3>
             <p>Responsible member: Thishoharini V</p>
@@ -116,7 +128,7 @@
     <section id="domain" class="section section-cream" aria-labelledby="domain-title">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow">Research domain</p>
+          <p class="eyebrow"><span class="eyebrow-num">02</span> Research domain</p>
           <h2 id="domain-title">Domain</h2>
           <p class="section-lead">The background, gap, problem, objectives, methodology and technologies of the research.</p>
         </header>
@@ -418,7 +430,7 @@
     <section id="milestones" class="section" aria-labelledby="milestones-title">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow">Assessment schedule</p>
+          <p class="eyebrow"><span class="eyebrow-num">03</span> Assessment schedule</p>
           <h2 id="milestones-title">Milestones</h2>
           <p class="section-lead">Assessment stages of the research project with dates, allocated marks and current status.</p>
         </header>
@@ -547,7 +559,7 @@
     <section id="documents" class="section section-cream" aria-labelledby="documents-title">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow">Google Drive</p>
+          <p class="eyebrow"><span class="eyebrow-num">04</span> Research documents</p>
           <h2 id="documents-title">Documents</h2>
           <p class="section-lead">Group and individual documents for each assessment stage. Files are stored on Google Drive.</p>
         </header>
@@ -790,7 +802,7 @@
     <section id="presentations" class="section" aria-labelledby="presentations-title">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow">Slides</p>
+          <p class="eyebrow"><span class="eyebrow-num">05</span> Slides</p>
           <h2 id="presentations-title">Presentations</h2>
           <p class="section-lead">Slides presented at each assessment stage.</p>
         </header>
@@ -844,42 +856,47 @@
 
     <!-- =====================================================
          6. ABOUT US
-         Photo: put the image URL (https://lh3.googleusercontent.com/d/FILE_ID=w600)
-         in <img src>. The initials stay visible if the photo is missing or fails.
+         PHOTOS: each person has a <div class="person-photo"> block.
+         To show a photo, upload it to the Drive "Photos" folder, share it,
+         copy its FILE_ID and put this line inside the block (after the initials):
+           <img src="https://lh3.googleusercontent.com/d/FILE_ID=w600" alt="" width="160" height="160" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+         The initials stay visible if the photo is missing or fails to load.
+         Full steps: README.md, section "Photos".
          ===================================================== -->
     <section id="about" class="section section-cream" aria-labelledby="about-title">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow">Our team</p>
+          <p class="eyebrow"><span class="eyebrow-num">06</span> Our team</p>
           <h2 id="about-title">About Us</h2>
           <p class="section-lead">The supervisory panel and research group members of R26-IT-087.</p>
         </header>
 
-        <h3 class="subheading">Supervisor</h3>
-        <div class="grid grid-2 people-grid">
-          <article class="card person-card">
-            <div class="person-photo" role="img" aria-label="Photograph of Ms. Shashika Lokuliyana, Supervisor">
-              <span class="avatar-initials" aria-hidden="true">SL</span>
-              <img src="https://lh3.googleusercontent.com/d/1x3sfDbMzdo9rTO3DQ6ONRsk2vMdB0B47=w600" alt="" width="120" height="120" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-            </div>
-            <div class="person-info">
-              <h4>Ms. Shashika Lokuliyana</h4>
-              <p class="person-role">Supervisor</p>
-              <dl class="person-details">
-                <div><dt>Affiliation:</dt><dd>Sri Lanka Institute of Information Technology</dd></div>
-                <div><dt>Email:</dt><dd>To be confirmed</dd></div>
-              </dl>
-              <a class="photo-link" href="https://drive.google.com/file/d/1x3sfDbMzdo9rTO3DQ6ONRsk2vMdB0B47/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="View original photograph of Ms. Shashika Lokuliyana on Google Drive (opens in a new tab)">View photo</a>
-            </div>
-          </article>
-        </div>
+        <div class="supervisor-grid">
+          <div class="people-area">
+            <h3 class="subheading">Supervisor</h3>
+            <article class="card person-card accent-blue">
+              <div class="person-photo" role="img" aria-label="Photograph of Ms. Shashika Lokuliyana, Supervisor">
+                <span class="avatar-initials" aria-hidden="true">SL</span>
+                <img src="https://lh3.googleusercontent.com/d/1x3sfDbMzdo9rTO3DQ6ONRsk2vMdB0B47=w600" alt="" width="160" height="160" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+              </div>
+              <div class="person-info">
+                <h4>Ms. Shashika Lokuliyana</h4>
+                <p class="person-role">Supervisor</p>
+                <dl class="person-details">
+                  <div><dt>Affiliation:</dt><dd>Sri Lanka Institute of Information Technology</dd></div>
+                  <div><dt>Email:</dt><dd>To be confirmed</dd></div>
+                </dl>
+              </div>
+            </article>
+          </div>
 
-        <h3 class="subheading">Co-supervisor</h3>
-        <div class="grid grid-2 people-grid">
-          <article class="card person-card">
-            <div class="person-photo" role="img" aria-label="Initials placeholder for the co-supervisor (photograph not available)">
-              <span class="avatar-initials" aria-hidden="true">CS</span>
-            </div>
+          <div class="people-area">
+            <h3 class="subheading">Co-supervisor</h3>
+            <article class="card person-card accent-green">
+              <div class="person-photo" role="img" aria-label="Initials placeholder for the co-supervisor (photograph not available)">
+                <span class="avatar-initials" aria-hidden="true">CS</span>
+                <!-- Photo: cosupervisor_Name.jpg -> <img src="https://lh3.googleusercontent.com/d/FILE_ID=w600" alt="" width="160" height="160" loading="lazy" decoding="async" referrerpolicy="no-referrer"> -->
+              </div>
             <div class="person-info">
               <h4>To be confirmed</h4>
               <p class="person-role">Co-supervisor</p>
@@ -889,13 +906,15 @@
               </dl>
             </div>
           </article>
+          </div>
         </div>
 
         <h3 class="subheading">Research group members</h3>
-        <div class="grid grid-2 people-grid">
+        <div class="grid people-grid members-grid">
           <article class="card person-card">
             <div class="person-photo" role="img" aria-label="Initials of Thishoharini V (photograph not available)">
               <span class="avatar-initials" aria-hidden="true">TV</span>
+              <!-- Photo: IT22281296_Thishoharini_V.jpg -> <img src="https://lh3.googleusercontent.com/d/FILE_ID=w600" alt="" width="160" height="160" loading="lazy" decoding="async" referrerpolicy="no-referrer"> -->
             </div>
             <div class="person-info">
               <h4>Thishoharini V</h4>
@@ -912,6 +931,7 @@
           <article class="card person-card">
             <div class="person-photo" role="img" aria-label="Initials of Sowmiya A (photograph not available)">
               <span class="avatar-initials" aria-hidden="true">SA</span>
+              <!-- Photo: IT22549440_Sowmiya_A.jpg -> <img src="https://lh3.googleusercontent.com/d/FILE_ID=w600" alt="" width="160" height="160" loading="lazy" decoding="async" referrerpolicy="no-referrer"> -->
             </div>
             <div class="person-info">
               <h4>Sowmiya A</h4>
@@ -928,6 +948,7 @@
           <article class="card person-card">
             <div class="person-photo" role="img" aria-label="Initials of Banuja S (photograph not available)">
               <span class="avatar-initials" aria-hidden="true">BS</span>
+              <!-- Photo: IT22188304_Banuja_S.jpg -> <img src="https://lh3.googleusercontent.com/d/FILE_ID=w600" alt="" width="160" height="160" loading="lazy" decoding="async" referrerpolicy="no-referrer"> -->
             </div>
             <div class="person-info">
               <h4>Banuja S</h4>
@@ -944,6 +965,7 @@
           <article class="card person-card">
             <div class="person-photo" role="img" aria-label="Initials of Kobiram T (photograph not available)">
               <span class="avatar-initials" aria-hidden="true">KT</span>
+              <!-- Photo: IT22245656_Kobiram_T.jpg -> <img src="https://lh3.googleusercontent.com/d/FILE_ID=w600" alt="" width="160" height="160" loading="lazy" decoding="async" referrerpolicy="no-referrer"> -->
             </div>
             <div class="person-info">
               <h4>Kobiram T</h4>
@@ -967,7 +989,7 @@
     <section id="contact" class="section" aria-labelledby="contact-title">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow">Get in touch</p>
+          <p class="eyebrow"><span class="eyebrow-num">07</span> Get in touch</p>
           <h2 id="contact-title">Contact Us</h2>
           <p class="section-lead">Use the template below to write to the research group from your own email app.</p>
         </header>
@@ -1012,10 +1034,33 @@ Kind regards,
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p><strong>R26-IT-087</strong> · An AI-Based Intelligent Farming System for Improving Pomegranate Yield and Quality</p>
-      <p>Department of Information Technology, Sri Lanka Institute of Information Technology (SLIIT)</p>
-      <p><a href="links.html">Google Drive links</a> · <a href="#home">Back to top</a></p>
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-title">R26-IT-087</p>
+        <p>An AI-Based Intelligent Farming System for Improving Pomegranate Yield and Quality</p>
+        <p class="footer-muted">IT4010 Research Project 2026 · Department of Information Technology, Faculty of Computing, Sri Lanka Institute of Information Technology (SLIIT)</p>
+      </div>
+      <nav aria-label="Footer">
+        <p class="footer-title">Sections</p>
+        <ul class="footer-links">
+          <li><a href="#domain">Domain</a></li>
+          <li><a href="#milestones">Milestones</a></li>
+          <li><a href="#documents">Documents</a></li>
+          <li><a href="#presentations">Presentations</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer-title">Resources</p>
+        <ul class="footer-links">
+          <li><a href="links.html">Google Drive links</a></li>
+          <li><a href="#home">Back to top</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>Academic research portfolio prepared for assessment by group R26-IT-087.</p>
     </div>
   </footer>
 </body>
