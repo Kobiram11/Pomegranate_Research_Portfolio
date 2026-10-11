@@ -17,15 +17,11 @@
       <a class="brand" href="#home" aria-label="R26-IT-087 research portfolio, go to Home">
         <span class="brand-mark" aria-hidden="true"></span>
         <span class="brand-text">
-          <span class="brand-id" data-bind="project.groupId"></span>
+          <span class="brand-id">R26-IT-087</span>
           <span class="brand-sub">Pomegranate Research</span>
         </span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span class="nav-toggle-bar" aria-hidden="true"></span>
-        <span class="visually-hidden">Menu</span>
-      </button>
-      <nav id="site-nav" class="site-nav" aria-label="Main">
+      <nav class="site-nav" aria-label="Main">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#domain">Domain</a></li>
@@ -40,14 +36,17 @@
   </header>
 
   <main id="main" tabindex="-1">
-    <!-- 1. HOME -->
+
+    <!-- =====================================================
+         1. HOME
+         ===================================================== -->
     <section id="home" class="hero" aria-labelledby="home-title">
       <div class="container hero-inner">
-        <p class="eyebrow"><span data-bind="project.groupId"></span> · <span data-bind="project.module"></span></p>
-        <h1 id="home-title" data-bind="project.title"></h1>
+        <p class="eyebrow">R26-IT-087 · IT4010 Research Project – 2026</p>
+        <h1 id="home-title">An AI-Based Intelligent Farming System for Improving Pomegranate Yield and Quality</h1>
         <p class="hero-identity">
-          <span data-bind="project.department"></span>, <span data-bind="project.faculty"></span><br>
-          <span data-bind="project.institution"></span>
+          Department of Information Technology, Faculty of Computing<br>
+          Sri Lanka Institute of Information Technology (SLIIT)
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#domain">Explore the Domain</a>
@@ -59,21 +58,61 @@
         <div class="hero-grid">
           <article class="card abstract-card">
             <h2>Abstract</h2>
-            <p data-bind="project.abstract"></p>
+            <p>Pomegranate farmers in Sri Lanka often make cultivation decisions without clear, timely information. Soil conditions are guessed, diseases are noticed late, fruit growth stages are estimated by eye, and fruit grading after harvest is done manually. This group research develops an integrated AI-based intelligent farming system that combines IoT soil sensing and image-based machine learning models. The system is organised into four individual components: fruit growth stage detection and harvest time prediction, fruit disease detection and treatment recommendation, fruit quality grading and waste utilization analysis, and intelligent fertilizer recommendation with weather-informed irrigation decisions.</p>
           </article>
           <aside class="card facts-card" aria-labelledby="facts-title">
             <h2 id="facts-title">Group identity</h2>
-            <dl id="project-facts" class="facts"></dl>
+            <dl class="facts">
+              <div><dt>Group ID</dt><dd>R26-IT-087</dd></div>
+              <div><dt>Research group</dt><dd>AIMS – Autonomous Intelligent Machines and Systems</dd></div>
+              <div><dt>Specialization</dt><dd>Information Technology (IT)</dd></div>
+              <div><dt>Research cluster</dt><dd>Computing for Sustainable Development – Smart Agriculture</dd></div>
+              <div><dt>Members</dt><dd>4</dd></div>
+            </dl>
           </aside>
         </div>
+
         <h2 class="subheading">Research overview</h2>
-        <div id="overview-cards" class="grid grid-3"></div>
+        <div class="grid grid-3">
+          <article class="card overview-card">
+            <h3>Problem area</h3>
+            <p>Farmers depend on manual practices, have limited knowledge of soil, irrigation and nutrient levels, detect diseases late, and lack tools to monitor fruit growth or grade fruit consistently.</p>
+          </article>
+          <article class="card overview-card">
+            <h3>Approach</h3>
+            <p>An integrated system that uses IoT sensors for soil data and image-based deep learning for fruit analysis, supporting decisions from soil monitoring to post-harvest grading.</p>
+          </article>
+          <article class="card overview-card">
+            <h3>Expected contribution</h3>
+            <p>Clear, component-specific decision support that aims to reduce crop loss, reduce fruit waste and encourage careful use of water and fertilizer.</p>
+          </article>
+        </div>
+
         <h2 class="subheading">Research components</h2>
-        <div id="home-components" class="grid grid-4"></div>
+        <div class="grid grid-4">
+          <article class="card mini-component">
+            <h3><a href="#c-growth">Fruit Growth Stage Detection and Harvest Time Prediction</a></h3>
+            <p>Responsible member: Thishoharini V</p>
+          </article>
+          <article class="card mini-component">
+            <h3><a href="#c-disease">Fruit Disease Detection and Treatment Recommendation</a></h3>
+            <p>Responsible member: Banuja S</p>
+          </article>
+          <article class="card mini-component">
+            <h3><a href="#c-quality">Fruit Quality Grading and Waste Utilization Analysis</a></h3>
+            <p>Responsible member: Sowmiya A</p>
+          </article>
+          <article class="card mini-component">
+            <h3><a href="#c-resource">Intelligent Fertilizer Recommendation and Irrigation Decision System</a></h3>
+            <p>Responsible member: Kobiram T</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- 2. DOMAIN -->
+    <!-- =====================================================
+         2. DOMAIN
+         ===================================================== -->
     <section id="domain" class="section section-cream" aria-labelledby="domain-title">
       <div class="container">
         <header class="section-head">
@@ -93,21 +132,76 @@
 
         <div id="literature" class="domain-block">
           <h3>Literature survey</h3>
-          <div id="literature-list" class="grid grid-2"></div>
+          <div class="grid grid-2">
+            <article class="card lit-card">
+              <h4>IoT soil and weather monitoring</h4>
+              <p>IoT systems have been used to monitor soil moisture, NPK levels, pH and temperature for pomegranate cultivation and to send readings to a dashboard or phone. These systems mainly display raw values and give limited action advice.</p>
+              <p class="lit-refs">Sources: [1] [2]</p>
+            </article>
+            <article class="card lit-card">
+              <h4>Fertilizer recommendation</h4>
+              <p>Studies apply supervised learning such as Random Forest, support vector machines, logistic regression, XGBoost and regression models to recommend fertilizer types, NPK quantities or mixing ratios. These targets differ from one another and cannot be compared directly.</p>
+              <p class="lit-refs">Sources: [3] [5] [6]</p>
+            </article>
+            <article class="card lit-card">
+              <h4>Irrigation advice and control</h4>
+              <p>IoT and cloud-based irrigation systems combine soil moisture sensors with weather prediction APIs or remote motor control. Irrigation decisions are often based only on soil moisture or humidity.</p>
+              <p class="lit-refs">Sources: [4] [7]</p>
+            </article>
+            <article class="card lit-card">
+              <h4>Image-based disease detection</h4>
+              <p>Image processing and CNN models have been used to identify pomegranate diseases. Most studies focus on leaf disease detection rather than fruit disease detection.</p>
+              <p class="lit-refs">Sources: [8] [9]</p>
+            </article>
+            <article class="card lit-card">
+              <h4>Fruit growth, grading and waste use</h4>
+              <p>Image-based monitoring of fruit growth and harvest time has been studied, but growth stage monitoring is rarely included in farming systems. Fruit grading research mostly focuses on grading accuracy, while pomegranate peels and seeds can be used for food, cosmetic and other value-added products.</p>
+              <p class="lit-refs">Sources: [10] [11]</p>
+            </article>
+            <article class="card lit-card">
+              <h4>Integrated pomegranate platforms</h4>
+              <p>Some systems combine nutrient, climate, disease and fruit quality functions, using Random Forest for structured data and CNNs for image tasks. Many other systems address a single agricultural problem only.</p>
+              <p class="lit-refs">Sources: [12]</p>
+            </article>
+          </div>
           <details class="references">
             <summary>References</summary>
-            <ol id="reference-list"></ol>
+            <ol>
+              <li>U. R. Harale and S. R. Kumbhar, “IoT Enabled Monitoring of Soil and Weather Parameters for Pomegranate Cultivation,” Journal of Electrical Systems, vol. 20, no. 11s, pp. 5375–5383, 2024.</li>
+              <li>H. Shahab et al., “IoT-driven smart agricultural technology for real-time soil monitoring and nutrient measurement,” Computers and Electronics in Agriculture, 2025.</li>
+              <li>M. D. Hossain, S. Mustary, M. A. Kashem, M. Z. Ferdus, and M. J. Sadeq, “IoT Enabled Soil Fertilizer Monitoring and Recommendation System in the Context of Bangladeshi Agriculture,” IEEE PEEIACON, pp. 416–421, 2024.</li>
+              <li>K. G. Anandha Jothi et al., “IoT and Cloud based Automated Irrigation System,” 3rd International Conference on Artificial Intelligence for Internet of Things, 2024.</li>
+              <li>A. Irfan, M. Hashim, Hammadullah, and A. M. Shaikh, “Advancing Agriculture with IoT and a Smart Fertilizer Recommendation System,” VFAST Transactions on Software Engineering, vol. 13, no. 3, pp. 43–54, 2025.</li>
+              <li>W. M. F. Wan Nik et al., “AI Assisted and IOT Based Fertilizer Mixing System,” Advanced and Sustainable Technologies, vol. 3, no. 1, pp. 38–45, 2024.</li>
+              <li>V. Anandkumar, T. R. Kalaiarasan, and S. Balakrishnan, “IoT Based Soil Analysis and Irrigation System,” International Journal of Pure and Applied Mathematics, vol. 119, no. 12, pp. 1127–1134, 2018.</li>
+              <li>P. B. Wakhare, S. Neduncheliyan, and K. R. Thakur, “Study of Disease Identification in Pomegranate Using Leaf Detection Technique,” 2022.</li>
+              <li>Prathibha K.N. and Adithya D.A., “An Integrated IoT-Based System for Automated Plant Disease Detection and Management,” International Journal of Innovative Science and Research Technology, 2025.</li>
+              <li>R. Milella, M. Reina, A. Nielsen, M. Paleari, and A. Vande Wouwer, “Image-Based Monitoring of Pomegranate Fruit Growth and Harvest Time Prediction,” IEEE Access, vol. 8, pp. 45970–45984, 2020.</li>
+              <li>K. Ko, Y. Dadmohammadi, and A. Abbaspourrad, “Nutritional and Bioactive Components of Pomegranate Waste Used in Food and Cosmetic Applications: A Review,” Foods, vol. 10, no. 3, 657, 2021.</li>
+              <li>V. D. Vidanapathirana et al., “Pomegranate Farming Monitoring System,” International Journal of Research in Engineering, Science and Management, vol. 6, no. 10, 2023.</li>
+            </ol>
           </details>
         </div>
 
         <div class="grid grid-2 domain-pair">
           <div id="gap" class="domain-block card">
             <h3>Research gap</h3>
-            <ul id="gap-list" class="tick-list"></ul>
+            <ul class="tick-list">
+              <li>Many research systems address a single agricultural problem, such as leaf disease detection, soil monitoring or post-harvest grading.</li>
+              <li>Most disease detection studies analyse leaves rather than pomegranate fruit.</li>
+              <li>Soil monitoring systems often display parameters without fertilizer or irrigation recommendations, and irrigation advice is rarely linked with rainfall forecasts.</li>
+              <li>Fruit growth stage monitoring and harvest time prediction are rarely considered.</li>
+              <li>Fruit grading studies focus on accuracy and do not recommend how each quality level should be used.</li>
+            </ul>
           </div>
           <div id="problem" class="domain-block card">
             <h3>Research problem</h3>
-            <ul id="problem-list" class="tick-list"></ul>
+            <ul class="tick-list">
+              <li>Pomegranate farmers in Sri Lanka still depend largely on traditional, manual farming practices, while Sri Lanka spends a large amount on pomegranate imports each year.</li>
+              <li>Farmers lack clear knowledge of soil conditions, irrigation needs and nutrient levels, which can lead to overuse or underuse of water and fertilizer.</li>
+              <li>Fruit diseases such as Bacterial Blight, Anthracnose and Alternaria are often detected late, causing crop damage and yield loss.</li>
+              <li>There is no practical way to monitor fruit growth stages or predict harvest time, and manual grading after harvest leads to fruit waste.</li>
+            </ul>
           </div>
         </div>
 
@@ -115,31 +209,212 @@
           <h3>Research objectives</h3>
           <div class="card objective-main">
             <h4>Main objective</h4>
-            <p id="objective-main"></p>
+            <p>To develop an integrated AI-based intelligent farming system that combines IoT sensors and image-based machine learning models to support pomegranate farmers from soil monitoring to post-harvest fruit grading.</p>
           </div>
           <h4 class="minor-heading">Specific objectives</h4>
-          <ol id="objective-list" class="number-list"></ol>
+          <ol class="number-list">
+            <li>Detect pomegranate fruit growth stages from images and predict the time remaining to harvest.</li>
+            <li>Detect and classify pomegranate fruit diseases from images and recommend suitable treatments.</li>
+            <li>Grade fruit into High, Medium and Low quality and recommend suitable usage for each level.</li>
+            <li>Collect soil readings with a portable IoT device, recommend fertilizer levels using soil data and tree age, and support irrigation decisions using soil moisture and weather information.</li>
+          </ol>
         </div>
 
         <div id="methodology" class="domain-block">
           <h3>Methodology</h3>
-          <ol id="method-steps" class="steps"></ol>
+          <ol class="steps">
+            <li><strong>Problem study</strong><span>Review literature, existing systems and farmer practices, supported by discussions with pomegranate farmers.</span></li>
+            <li><strong>Data collection</strong><span>Collect fruit images from public datasets and farm sources, and soil readings from a portable 7-in-1 soil sensor together with weather data.</span></li>
+            <li><strong>Preprocessing</strong><span>Clean, resize and label images; clean structured soil and weather records and prepare model features.</span></li>
+            <li><strong>Model development</strong><span>Train deep learning models (CNN, YOLO) for image tasks and Random Forest classifiers for structured soil and weather data.</span></li>
+            <li><strong>System development</strong><span>Build application interfaces for uploading images, receiving sensor readings and displaying results and recommendations.</span></li>
+            <li><strong>Evaluation</strong><span>Evaluate each component separately with training and testing splits and classification metrics, then validate with new real-world inputs.</span></li>
+          </ol>
         </div>
 
         <div id="components" class="domain-block">
           <h3>Research components and responsibilities</h3>
           <p class="muted">Each component is an individual research contribution with its own inputs, methods and evaluation.</p>
-          <div id="component-list" class="component-list"></div>
+          <div class="component-list">
+
+            <article class="card component-card" id="c-growth" aria-labelledby="c-growth-title">
+              <div class="component-head">
+                <div>
+                  <h4 id="c-growth-title">Fruit Growth Stage Detection and Harvest Time Prediction</h4>
+                  <p class="muted">An AI-based component that detects pomegranate fruit growth stages from images and predicts the remaining days to harvest.</p>
+                </div>
+                <span class="component-owner">Responsible: Thishoharini V · IT22281296</span>
+              </div>
+              <div class="component-body">
+                <div><h5>Problem</h5>
+                  <ul>
+                    <li>Farmers usually estimate fruit maturity manually.</li>
+                    <li>Incorrect harvesting can lead to poor fruit quality and market loss.</li>
+                    <li>Pomegranate fruits pass through several growth stages that are difficult to identify accurately.</li>
+                  </ul>
+                </div>
+                <div><h5>Objectives</h5>
+                  <ul>
+                    <li>Collect a pomegranate growth stage image dataset.</li>
+                    <li>Apply image preprocessing techniques.</li>
+                    <li>Train a deep learning model to classify five growth stages.</li>
+                    <li>Predict harvest readiness from the detected stage.</li>
+                    <li>Evaluate performance using accuracy and classification metrics.</li>
+                  </ul>
+                </div>
+                <div class="component-full"><h5>Method</h5>
+                  <p>A farmer uploads a fruit image. The image is preprocessed, YOLO detects the fruit, a CNN classifies the growth stage, and the system estimates the time remaining to harvest. Weather conditions can adjust the prediction.</p>
+                </div>
+                <div><h5>Technologies</h5>
+                  <ul class="tag-list"><li class="tag">YOLO</li><li class="tag">CNN</li><li class="tag">OpenCV</li><li class="tag">TensorFlow / Keras</li><li class="tag">Python</li></ul>
+                </div>
+                <div><h5>Evaluation</h5>
+                  <p>Training and testing split; accuracy and classification metrics; validation with new fruit images.</p>
+                </div>
+                <div class="component-full"><h5>Results</h5><p>To be confirmed</p></div>
+              </div>
+            </article>
+
+            <article class="card component-card" id="c-disease" aria-labelledby="c-disease-title">
+              <div class="component-head">
+                <div>
+                  <h4 id="c-disease-title">Fruit Disease Detection and Treatment Recommendation</h4>
+                  <p class="muted">An AI-based component that detects and classifies pomegranate fruit diseases from images and provides treatment recommendations.</p>
+                </div>
+                <span class="component-owner">Responsible: Banuja S · IT22188304</span>
+              </div>
+              <div class="component-body">
+                <div><h5>Problem</h5>
+                  <ul>
+                    <li>Fruit diseases reduce fruit quality and crop yield.</li>
+                    <li>Farmers mostly rely on manual visual inspection, and early symptoms are hard to identify.</li>
+                    <li>Most existing studies focus on leaf disease rather than fruit disease.</li>
+                  </ul>
+                </div>
+                <div><h5>Objectives</h5>
+                  <ul>
+                    <li>Collect healthy and diseased pomegranate fruit images.</li>
+                    <li>Preprocess images to improve quality.</li>
+                    <li>Develop and train a disease detection model (Healthy, Bacterial Blight, Anthracnose, Alternaria).</li>
+                    <li>Design a web-based system to upload images, display results and suggest treatment.</li>
+                  </ul>
+                </div>
+                <div class="component-full"><h5>Method</h5>
+                  <p>A farmer uploads a fruit image. The image is preprocessed and a CNN identifies whether the fruit is healthy or diseased. If a disease is detected, its type is identified and a treatment is suggested.</p>
+                </div>
+                <div><h5>Technologies</h5>
+                  <ul class="tag-list"><li class="tag">CNN</li><li class="tag">TensorFlow / Keras</li><li class="tag">OpenCV</li><li class="tag">Python</li></ul>
+                </div>
+                <div><h5>Evaluation</h5>
+                  <p>Model accuracy (proposal target: around 90% or higher), farm testing with uploaded fruit images, and response time.</p>
+                </div>
+                <div class="component-full"><h5>Results</h5><p>To be confirmed</p></div>
+              </div>
+            </article>
+
+            <article class="card component-card" id="c-quality" aria-labelledby="c-quality-title">
+              <div class="component-head">
+                <div>
+                  <h4 id="c-quality-title">Fruit Quality Grading and Waste Utilization Analysis</h4>
+                  <p class="muted">An AI-based web component that grades pomegranate fruit quality and recommends suitable usage for each grade.</p>
+                </div>
+                <span class="component-owner">Responsible: Sowmiya A · IT22549440</span>
+              </div>
+              <div class="component-body">
+                <div><h5>Problem</h5>
+                  <ul>
+                    <li>Many farmers sort fruit manually after harvest, which is slow and not always accurate.</li>
+                    <li>Low-quality fruits are often thrown away as waste.</li>
+                    <li>Existing research focuses on grading accuracy without recommending how graded fruit should be used.</li>
+                  </ul>
+                </div>
+                <div><h5>Objectives</h5>
+                  <ul>
+                    <li>Collect and prepare a pomegranate fruit image dataset.</li>
+                    <li>Apply image preprocessing techniques.</li>
+                    <li>Train ML/DL models to classify High, Medium and Low quality.</li>
+                    <li>Develop a web system to show grading results and usage recommendations (export, processing or fertilizer).</li>
+                  </ul>
+                </div>
+                <div class="component-full"><h5>Method</h5>
+                  <p>A fruit image is uploaded, preprocessed and its features extracted. The model classifies quality, and the system displays the grade with a recommended usage.</p>
+                </div>
+                <div><h5>Technologies</h5>
+                  <ul class="tag-list"><li class="tag">CNN</li><li class="tag">SVM and ANN (for comparison)</li><li class="tag">OpenCV</li><li class="tag">TensorFlow / Keras</li><li class="tag">Python</li></ul>
+                </div>
+                <div><h5>Evaluation</h5>
+                  <p>80% training and 20% testing split; CNN, SVM and ANN compared; classification accuracy (proposal target: about 90%); testing with real fruit images.</p>
+                </div>
+                <div class="component-full"><h5>Results</h5><p>To be confirmed</p></div>
+              </div>
+            </article>
+
+            <article class="card component-card" id="c-resource" aria-labelledby="c-resource-title">
+              <div class="component-head">
+                <div>
+                  <h4 id="c-resource-title">Intelligent Fertilizer Recommendation and Irrigation Decision System</h4>
+                  <p class="muted">Thesis title: IoT Based Smart Fertilizer and Weather Aware Irrigation System for Pomegranate Cultivation</p>
+                  <p class="muted">An IoT and machine learning component that uses soil readings, tree age and weather information to support fertilizer and irrigation decisions.</p>
+                </div>
+                <span class="component-owner">Responsible: Kobiram T · IT22245656</span>
+              </div>
+              <div class="component-body">
+                <div><h5>Problem</h5>
+                  <ul>
+                    <li>Soil information, crop age and weather information are often available separately and are not interpreted together for a decision.</li>
+                    <li>Irrigation is commonly based only on soil moisture, without considering expected rainfall.</li>
+                    <li>Laboratory soil testing is slow and not real-time.</li>
+                  </ul>
+                </div>
+                <div><h5>Objectives</h5>
+                  <ul>
+                    <li>Collect soil N, P, K, pH, moisture and temperature with a portable 7-in-1 soil sensor, ESP32 and RS485 to TTL module.</li>
+                    <li>Transfer readings to the mobile application through Bluetooth.</li>
+                    <li>Combine the six soil readings with manually entered tree age to classify Low, Medium or High fertilizer levels, with Urea, TSP and MOP information.</li>
+                    <li>Combine soil moisture with weather data for the farm location to recommend one of four irrigation action states.</li>
+                    <li>Evaluate both classifiers using separate test data.</li>
+                  </ul>
+                </div>
+                <div class="component-full"><h5>Method</h5>
+                  <p>Readings travel from the sensor to the ESP32 and then to the mobile app through Bluetooth. Tree age is converted into a cultivation category, forming a seven-feature input for a Random Forest fertilizer classifier. A separate Random Forest classifier combines moisture with Open-Meteo weather data to choose an irrigation state: Suitable to irrigate, Skip – rain expected, Skip – soil already wet, or No urgent irrigation.</p>
+                </div>
+                <div><h5>Technologies</h5>
+                  <ul class="tag-list"><li class="tag">ESP32</li><li class="tag">7-in-1 soil sensor</li><li class="tag">RS485 to TTL</li><li class="tag">Bluetooth</li><li class="tag">Random Forest</li><li class="tag">Open-Meteo API</li><li class="tag">Flutter / Dart</li><li class="tag">TensorFlow Lite</li><li class="tag">Python</li></ul>
+                </div>
+                <div><h5>Evaluation</h5>
+                  <p>Fertilizer: stratified 80/20 split with five-fold cross validation. Irrigation: chronological split. Accuracy, precision, recall and F1-score.</p>
+                </div>
+                <div class="component-full"><h5>Results</h5>
+                  <p>Recorded in the individual thesis: fertilizer test accuracy 95.18% (mean five-fold cross validation 96.54%) and irrigation test accuracy 91.85%. These values measure agreement with reference labels; they do not establish fertilizer quantity accuracy, sensor calibration, water savings or yield improvement.</p>
+                </div>
+                <p class="scope-note component-full">This component does not perform image-based growth monitoring, disease prediction or fruit quality prediction.</p>
+              </div>
+            </article>
+
+          </div>
         </div>
 
         <div id="technologies" class="domain-block">
           <h3>Technologies used</h3>
-          <ul id="tech-list" class="tech-grid"></ul>
+          <ul class="tech-grid">
+            <li><strong>Python</strong><span>Data preparation and model development</span></li>
+            <li><strong>TensorFlow / Keras</strong><span>Training deep learning models</span></li>
+            <li><strong>Convolutional Neural Networks (CNN)</strong><span>Image classification of growth stage, disease and quality</span></li>
+            <li><strong>YOLO</strong><span>Detecting pomegranate fruits in images</span></li>
+            <li><strong>OpenCV</strong><span>Image preprocessing and feature extraction</span></li>
+            <li><strong>Random Forest</strong><span>Fertilizer level and irrigation state classification</span></li>
+            <li><strong>ESP32 and 7-in-1 soil sensor</strong><span>Portable soil sensing (N, P, K, pH, moisture, temperature)</span></li>
+            <li><strong>RS485 to TTL module and Bluetooth</strong><span>Sensor communication and transfer of readings to the mobile application</span></li>
+            <li><strong>Open-Meteo weather API</strong><span>Weather information for irrigation decisions</span></li>
+            <li><strong>Flutter / Dart and TensorFlow Lite</strong><span>Mobile application and on-device inference</span></li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- 3. MILESTONES -->
+    <!-- =====================================================
+         3. MILESTONES
+         ===================================================== -->
     <section id="milestones" class="section" aria-labelledby="milestones-title">
       <div class="container">
         <header class="section-head">
@@ -147,18 +422,128 @@
           <h2 id="milestones-title">Milestones</h2>
           <p class="section-lead">Assessment stages of the research project with dates, allocated marks and current status.</p>
         </header>
-        <ol id="timeline" class="timeline"></ol>
+
+        <ol class="timeline">
+          <li class="timeline-item is-completed">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <article class="card timeline-card">
+              <header><h3>Project Proposal</h3><span class="badge badge-completed">Completed</span></header>
+              <p>Topic assessment, proposal presentation and individual proposal reports defining the problem, objectives, methodology and component responsibilities.</p>
+              <dl class="timeline-meta">
+                <div><dt>Date:</dt><dd>16 March 2026 (proposal presentation)</dd></div>
+                <div><dt>Marks:</dt><dd>To be confirmed</dd></div>
+              </dl>
+            </article>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <article class="card timeline-card">
+              <header><h3>Progress Presentation 1</h3><span class="badge badge-tbc">To be confirmed</span></header>
+              <p>First progress review of each component's design, data collection and early implementation.</p>
+              <dl class="timeline-meta">
+                <div><dt>Date:</dt><dd>To be confirmed</dd></div>
+                <div><dt>Marks:</dt><dd>To be confirmed</dd></div>
+              </dl>
+            </article>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <article class="card timeline-card">
+              <header><h3>Progress Presentation 2</h3><span class="badge badge-tbc">To be confirmed</span></header>
+              <p>Second progress review of implementation, integration and evaluation progress.</p>
+              <dl class="timeline-meta">
+                <div><dt>Date:</dt><dd>To be confirmed</dd></div>
+                <div><dt>Marks:</dt><dd>To be confirmed</dd></div>
+              </dl>
+            </article>
+          </li>
+          <li class="timeline-item is-in-progress">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <article class="card timeline-card">
+              <header><h3>Final Assessment</h3><span class="badge badge-in-progress">In progress</span></header>
+              <p>Submission of final group documents and individual theses with the completed system.</p>
+              <dl class="timeline-meta">
+                <div><dt>Date:</dt><dd>To be confirmed</dd></div>
+                <div><dt>Marks:</dt><dd>To be confirmed</dd></div>
+              </dl>
+            </article>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <article class="card timeline-card">
+              <header><h3>Viva</h3><span class="badge badge-upcoming">Upcoming</span></header>
+              <p>Oral examination where each member explains and defends their individual research contribution.</p>
+              <dl class="timeline-meta">
+                <div><dt>Date:</dt><dd>To be confirmed</dd></div>
+                <div><dt>Marks:</dt><dd>To be confirmed</dd></div>
+              </dl>
+            </article>
+          </li>
+        </ol>
 
         <div class="card assessment-picker">
           <h3>Assessment details</h3>
-          <label for="assessment-select">Choose an assessment</label>
-          <select id="assessment-select"></select>
-          <div id="assessment-detail" class="assessment-detail" aria-live="polite"></div>
+          <p class="muted">Select an assessment to expand its details.</p>
+          <details class="assessment" name="assessment" open>
+            <summary>Project Proposal</summary>
+            <dl class="facts">
+              <div><dt>Description</dt><dd>Topic assessment, proposal presentation and individual proposal reports.</dd></div>
+              <div><dt>Date</dt><dd>16 March 2026 (proposal presentation)</dd></div>
+              <div><dt>Allocated marks</dt><dd>To be confirmed</dd></div>
+              <div><dt>Status</dt><dd>Completed</dd></div>
+              <div><dt>Presentation slides</dt><dd>Available</dd></div>
+            </dl>
+          </details>
+          <details class="assessment" name="assessment">
+            <summary>Progress Presentation 1</summary>
+            <dl class="facts">
+              <div><dt>Description</dt><dd>First progress review of design, data collection and early implementation.</dd></div>
+              <div><dt>Date</dt><dd>To be confirmed</dd></div>
+              <div><dt>Allocated marks</dt><dd>To be confirmed</dd></div>
+              <div><dt>Status</dt><dd>To be confirmed</dd></div>
+              <div><dt>Presentation slides</dt><dd>Pending upload</dd></div>
+            </dl>
+          </details>
+          <details class="assessment" name="assessment">
+            <summary>Progress Presentation 2</summary>
+            <dl class="facts">
+              <div><dt>Description</dt><dd>Second progress review of implementation, integration and evaluation progress.</dd></div>
+              <div><dt>Date</dt><dd>To be confirmed</dd></div>
+              <div><dt>Allocated marks</dt><dd>To be confirmed</dd></div>
+              <div><dt>Status</dt><dd>To be confirmed</dd></div>
+              <div><dt>Presentation slides</dt><dd>Pending upload</dd></div>
+            </dl>
+          </details>
+          <details class="assessment" name="assessment">
+            <summary>Final Assessment</summary>
+            <dl class="facts">
+              <div><dt>Description</dt><dd>Final group documents and individual theses with the completed system.</dd></div>
+              <div><dt>Date</dt><dd>To be confirmed</dd></div>
+              <div><dt>Allocated marks</dt><dd>To be confirmed</dd></div>
+              <div><dt>Status</dt><dd>In progress</dd></div>
+              <div><dt>Presentation slides</dt><dd>Pending upload</dd></div>
+            </dl>
+          </details>
+          <details class="assessment" name="assessment">
+            <summary>Viva</summary>
+            <dl class="facts">
+              <div><dt>Description</dt><dd>Oral examination of each member's individual research contribution.</dd></div>
+              <div><dt>Date</dt><dd>To be confirmed</dd></div>
+              <div><dt>Allocated marks</dt><dd>To be confirmed</dd></div>
+              <div><dt>Status</dt><dd>Upcoming</dd></div>
+            </dl>
+          </details>
         </div>
       </div>
     </section>
 
-    <!-- 4. DOCUMENTS -->
+    <!-- =====================================================
+         4. DOCUMENTS
+         To add a file: copy one <article class="doc-card"> block and edit it.
+         data-category: charter | proposal | pp1 | pp2 | final | theses
+         data-type:     group | individual
+         data-owner:    group | thishoharini | sowmiya | banuja | kobiram
+         ===================================================== -->
     <section id="documents" class="section section-cream" aria-labelledby="documents-title">
       <div class="container">
         <header class="section-head">
@@ -167,44 +552,241 @@
           <p class="section-lead">Group and individual documents for each assessment stage. Files are stored on Google Drive.</p>
         </header>
 
-        <form class="filters card" id="doc-filters" role="search" aria-label="Filter documents">
-          <div class="filter-field filter-search">
-            <label for="doc-search">Search by title</label>
-            <input type="search" id="doc-search" placeholder="e.g. proposal, thesis" autocomplete="off">
-          </div>
-          <div class="filter-field">
-            <label for="doc-category">Category</label>
-            <select id="doc-category"><option value="all">All categories</option></select>
-          </div>
-          <div class="filter-field">
-            <label for="doc-type">Group / Individual</label>
-            <select id="doc-type">
-              <option value="all">All</option>
-              <option value="group">Group</option>
-              <option value="individual">Individual</option>
-            </select>
-          </div>
-          <div class="filter-field">
-            <label for="doc-member">Member</label>
-            <select id="doc-member"><option value="all">All members</option></select>
-          </div>
-          <div class="filter-field filter-reset">
+        <form class="filters card" aria-label="Filter documents">
+          <fieldset class="chip-group">
+            <legend>Category</legend>
+            <input type="radio" name="cat" id="f-cat-all" checked><label for="f-cat-all">All</label>
+            <input type="radio" name="cat" id="f-cat-charter"><label for="f-cat-charter">Project Charter</label>
+            <input type="radio" name="cat" id="f-cat-proposal"><label for="f-cat-proposal">Proposal</label>
+            <input type="radio" name="cat" id="f-cat-pp1"><label for="f-cat-pp1">PP1</label>
+            <input type="radio" name="cat" id="f-cat-pp2"><label for="f-cat-pp2">PP2</label>
+            <input type="radio" name="cat" id="f-cat-final"><label for="f-cat-final">Final</label>
+            <input type="radio" name="cat" id="f-cat-theses"><label for="f-cat-theses">Theses</label>
+          </fieldset>
+          <fieldset class="chip-group">
+            <legend>Group / Individual</legend>
+            <input type="radio" name="type" id="f-type-all" checked><label for="f-type-all">All</label>
+            <input type="radio" name="type" id="f-type-group"><label for="f-type-group">Group</label>
+            <input type="radio" name="type" id="f-type-individual"><label for="f-type-individual">Individual</label>
+          </fieldset>
+          <fieldset class="chip-group">
+            <legend>Member</legend>
+            <input type="radio" name="member" id="f-mem-all" checked><label for="f-mem-all">All members</label>
+            <input type="radio" name="member" id="f-mem-thishoharini"><label for="f-mem-thishoharini">Thishoharini V</label>
+            <input type="radio" name="member" id="f-mem-sowmiya"><label for="f-mem-sowmiya">Sowmiya A</label>
+            <input type="radio" name="member" id="f-mem-banuja"><label for="f-mem-banuja">Banuja S</label>
+            <input type="radio" name="member" id="f-mem-kobiram"><label for="f-mem-kobiram">Kobiram T</label>
+          </fieldset>
+          <div class="filter-reset">
             <button type="reset" class="btn btn-ghost btn-small">Clear filters</button>
           </div>
         </form>
-        <div class="category-chips" id="category-chips" role="group" aria-label="Quick category filter"></div>
-        <p id="doc-count" class="result-count" aria-live="polite"></p>
-        <div id="doc-list" class="grid grid-3 doc-grid"></div>
 
-        <div class="folder-panel">
-          <h3>Drive folders</h3>
-          <p class="muted">Browse the shared folders directly. The site lists only files that have been added to the configuration.</p>
-          <ul id="folder-list" class="folder-list"></ul>
+        <div class="doc-results">
+          <div class="grid grid-3 doc-grid">
+
+            <!-- Project Charter -->
+            <article class="card doc-card is-available" data-category="charter" data-type="group" data-owner="group">
+              <div class="doc-top"><span class="doc-category">Project Charter</span><span class="badge badge-available">Available</span></div>
+              <h3>Topic Assessment Form (TAF) – R26-IT-087</h3>
+              <p class="owner-pill owner-group">Group · Owner: Group (common document)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>January 2026</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <div class="doc-actions">
+                <a class="btn btn-primary btn-small" href="https://drive.google.com/file/d/1u_8ZlPLS86pP6HG_V8qnqDpiHsCNJfiE/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="View Topic Assessment Form (opens in a new tab)">View</a>
+                <a class="btn btn-outline btn-small" href="https://drive.google.com/uc?export=download&amp;id=1u_8ZlPLS86pP6HG_V8qnqDpiHsCNJfiE" target="_blank" rel="noopener noreferrer" aria-label="Download Topic Assessment Form (PDF)">Download</a>
+              </div>
+            </article>
+            <article class="card doc-card is-pending" data-category="charter" data-type="group" data-owner="group">
+              <div class="doc-top"><span class="doc-category">Project Charter</span><span class="badge badge-pending">Pending upload</span></div>
+              <h3>Project Charter</h3>
+              <p class="owner-pill owner-group">Group · Owner: Group (common document)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>To be confirmed</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <p class="pending-note">Pending upload</p>
+            </article>
+
+            <!-- Proposal -->
+            <article class="card doc-card is-pending" data-category="proposal" data-type="group" data-owner="group">
+              <div class="doc-top"><span class="doc-category">Proposal</span><span class="badge badge-pending">Pending upload</span></div>
+              <h3>Proposal Checklist</h3>
+              <p class="owner-pill owner-group">Group · Owner: Group (common document)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>To be confirmed</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <p class="pending-note">Pending upload</p>
+            </article>
+            <article class="card doc-card is-available" data-category="proposal" data-type="individual" data-owner="thishoharini">
+              <div class="doc-top"><span class="doc-category">Proposal</span><span class="badge badge-available">Available</span></div>
+              <h3>Project Proposal Report – Thishoharini V</h3>
+              <p class="owner-pill owner-individual">Individual · Owner: Thishoharini V (IT22281296)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>To be confirmed</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <div class="doc-actions">
+                <a class="btn btn-primary btn-small" href="https://drive.google.com/file/d/1NIInY0se8h4Te-3LIkKn5u2vp_I1LPEK/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="View Project Proposal Report of Thishoharini V (opens in a new tab)">View</a>
+                <a class="btn btn-outline btn-small" href="https://drive.google.com/uc?export=download&amp;id=1NIInY0se8h4Te-3LIkKn5u2vp_I1LPEK" target="_blank" rel="noopener noreferrer" aria-label="Download Project Proposal Report of Thishoharini V (PDF)">Download</a>
+              </div>
+            </article>
+            <article class="card doc-card is-available" data-category="proposal" data-type="individual" data-owner="sowmiya">
+              <div class="doc-top"><span class="doc-category">Proposal</span><span class="badge badge-available">Available</span></div>
+              <h3>Project Proposal Report – Sowmiya A</h3>
+              <p class="owner-pill owner-individual">Individual · Owner: Sowmiya A (IT22549440)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>March 2026</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <div class="doc-actions">
+                <a class="btn btn-primary btn-small" href="https://drive.google.com/file/d/1qq6EB2KlI4TX9lp25YkO0JmfjPXL0mXG/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="View Project Proposal Report of Sowmiya A (opens in a new tab)">View</a>
+                <a class="btn btn-outline btn-small" href="https://drive.google.com/uc?export=download&amp;id=1qq6EB2KlI4TX9lp25YkO0JmfjPXL0mXG" target="_blank" rel="noopener noreferrer" aria-label="Download Project Proposal Report of Sowmiya A (PDF)">Download</a>
+              </div>
+            </article>
+            <article class="card doc-card is-available" data-category="proposal" data-type="individual" data-owner="banuja">
+              <div class="doc-top"><span class="doc-category">Proposal</span><span class="badge badge-available">Available</span></div>
+              <h3>Project Proposal Report – Banuja S</h3>
+              <p class="owner-pill owner-individual">Individual · Owner: Banuja S (IT22188304)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>To be confirmed</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <div class="doc-actions">
+                <a class="btn btn-primary btn-small" href="https://drive.google.com/file/d/1ImIv1-ptctwOTxkeSVjaC91RJxDk9PVC/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="View Project Proposal Report of Banuja S (opens in a new tab)">View</a>
+                <a class="btn btn-outline btn-small" href="https://drive.google.com/uc?export=download&amp;id=1ImIv1-ptctwOTxkeSVjaC91RJxDk9PVC" target="_blank" rel="noopener noreferrer" aria-label="Download Project Proposal Report of Banuja S (PDF)">Download</a>
+              </div>
+            </article>
+            <article class="card doc-card is-available" data-category="proposal" data-type="individual" data-owner="kobiram">
+              <div class="doc-top"><span class="doc-category">Proposal</span><span class="badge badge-available">Available</span></div>
+              <h3>Project Proposal Report – Kobiram T</h3>
+              <p class="owner-pill owner-individual">Individual · Owner: Kobiram T (IT22245656)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>March 2026</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <div class="doc-actions">
+                <a class="btn btn-primary btn-small" href="https://drive.google.com/file/d/1h65AtxcCqlKVQwg1EcQouTgx2xbi8NQq/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="View Project Proposal Report of Kobiram T (opens in a new tab)">View</a>
+                <a class="btn btn-outline btn-small" href="https://drive.google.com/uc?export=download&amp;id=1h65AtxcCqlKVQwg1EcQouTgx2xbi8NQq" target="_blank" rel="noopener noreferrer" aria-label="Download Project Proposal Report of Kobiram T (PDF)">Download</a>
+              </div>
+            </article>
+
+            <!-- PP1 -->
+            <article class="card doc-card is-pending" data-category="pp1" data-type="group" data-owner="group">
+              <div class="doc-top"><span class="doc-category">PP1</span><span class="badge badge-pending">Pending upload</span></div>
+              <h3>PP1 Checklist</h3>
+              <p class="owner-pill owner-group">Group · Owner: Group (common document)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>To be confirmed</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <p class="pending-note">Pending upload</p>
+            </article>
+            <article class="card doc-card is-pending" data-category="pp1" data-type="individual" data-owner="thishoharini">
+              <div class="doc-top"><span class="doc-category">PP1</span><span class="badge badge-pending">Pending upload</span></div>
+              <h3>PP1 Report – Thishoharini V</h3>
+              <p class="owner-pill owner-individual">Individual · Owner: Thishoharini V (IT22281296)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>To be confirmed</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <p class="pending-note">Pending upload</p>
+            </article>
+            <article class="card doc-card is-pending" data-category="pp1" data-type="individual" data-owner="sowmiya">
+              <div class="doc-top"><span class="doc-category">PP1</span><span class="badge badge-pending">Pending upload</span></div>
+              <h3>PP1 Report – Sowmiya A</h3>
+              <p class="owner-pill owner-individual">Individual · Owner: Sowmiya A (IT22549440)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>To be confirmed</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <p class="pending-note">Pending upload</p>
+            </article>
+            <article class="card doc-card is-pending" data-category="pp1" data-type="individual" data-owner="banuja">
+              <div class="doc-top"><span class="doc-category">PP1</span><span class="badge badge-pending">Pending upload</span></div>
+              <h3>PP1 Report – Banuja S</h3>
+              <p class="owner-pill owner-individual">Individual · Owner: Banuja S (IT22188304)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>To be confirmed</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <p class="pending-note">Pending upload</p>
+            </article>
+            <article class="card doc-card is-pending" data-category="pp1" data-type="individual" data-owner="kobiram">
+              <div class="doc-top"><span class="doc-category">PP1</span><span class="badge badge-pending">Pending upload</span></div>
+              <h3>PP1 Report – Kobiram T</h3>
+              <p class="owner-pill owner-individual">Individual · Owner: Kobiram T (IT22245656)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>To be confirmed</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <p class="pending-note">Pending upload</p>
+            </article>
+
+            <!-- PP2 -->
+            <article class="card doc-card is-pending" data-category="pp2" data-type="group" data-owner="group">
+              <div class="doc-top"><span class="doc-category">PP2</span><span class="badge badge-pending">Pending upload</span></div>
+              <h3>PP2 Checklist</h3>
+              <p class="owner-pill owner-group">Group · Owner: Group (common document)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>To be confirmed</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <p class="pending-note">Pending upload</p>
+            </article>
+            <article class="card doc-card is-pending" data-category="pp2" data-type="individual" data-owner="thishoharini">
+              <div class="doc-top"><span class="doc-category">PP2</span><span class="badge badge-pending">Pending upload</span></div>
+              <h3>PP2 Report – Thishoharini V</h3>
+              <p class="owner-pill owner-individual">Individual · Owner: Thishoharini V (IT22281296)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>To be confirmed</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <p class="pending-note">Pending upload</p>
+            </article>
+            <article class="card doc-card is-pending" data-category="pp2" data-type="individual" data-owner="sowmiya">
+              <div class="doc-top"><span class="doc-category">PP2</span><span class="badge badge-pending">Pending upload</span></div>
+              <h3>PP2 Report – Sowmiya A</h3>
+              <p class="owner-pill owner-individual">Individual · Owner: Sowmiya A (IT22549440)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>To be confirmed</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <p class="pending-note">Pending upload</p>
+            </article>
+            <article class="card doc-card is-pending" data-category="pp2" data-type="individual" data-owner="banuja">
+              <div class="doc-top"><span class="doc-category">PP2</span><span class="badge badge-pending">Pending upload</span></div>
+              <h3>PP2 Report – Banuja S</h3>
+              <p class="owner-pill owner-individual">Individual · Owner: Banuja S (IT22188304)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>To be confirmed</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <p class="pending-note">Pending upload</p>
+            </article>
+            <article class="card doc-card is-pending" data-category="pp2" data-type="individual" data-owner="kobiram">
+              <div class="doc-top"><span class="doc-category">PP2</span><span class="badge badge-pending">Pending upload</span></div>
+              <h3>PP2 Report – Kobiram T</h3>
+              <p class="owner-pill owner-individual">Individual · Owner: Kobiram T (IT22245656)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>To be confirmed</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <p class="pending-note">Pending upload</p>
+            </article>
+
+            <!-- Final -->
+            <article class="card doc-card is-pending" data-category="final" data-type="group" data-owner="group">
+              <div class="doc-top"><span class="doc-category">Final</span><span class="badge badge-pending">Pending upload</span></div>
+              <h3>Final Group Report</h3>
+              <p class="owner-pill owner-group">Group · Owner: Group (common document)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>To be confirmed</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <p class="pending-note">Pending upload</p>
+            </article>
+            <article class="card doc-card is-pending" data-category="final" data-type="group" data-owner="group">
+              <div class="doc-top"><span class="doc-category">Final</span><span class="badge badge-pending">Pending upload</span></div>
+              <h3>Final Checklist</h3>
+              <p class="owner-pill owner-group">Group · Owner: Group (common document)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>To be confirmed</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <p class="pending-note">Pending upload</p>
+            </article>
+
+            <!-- Theses -->
+            <article class="card doc-card is-pending" data-category="theses" data-type="individual" data-owner="thishoharini">
+              <div class="doc-top"><span class="doc-category">Theses</span><span class="badge badge-pending">Pending upload</span></div>
+              <h3>Individual Thesis – Thishoharini V</h3>
+              <p class="owner-pill owner-individual">Individual · Owner: Thishoharini V (IT22281296)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>To be confirmed</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <p class="pending-note">Pending upload</p>
+            </article>
+            <article class="card doc-card is-pending" data-category="theses" data-type="individual" data-owner="sowmiya">
+              <div class="doc-top"><span class="doc-category">Theses</span><span class="badge badge-pending">Pending upload</span></div>
+              <h3>Individual Thesis – Sowmiya A</h3>
+              <p class="owner-pill owner-individual">Individual · Owner: Sowmiya A (IT22549440)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>To be confirmed</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <p class="pending-note">Pending upload</p>
+            </article>
+            <article class="card doc-card is-pending" data-category="theses" data-type="individual" data-owner="banuja">
+              <div class="doc-top"><span class="doc-category">Theses</span><span class="badge badge-pending">Pending upload</span></div>
+              <h3>Individual Thesis – Banuja S</h3>
+              <p class="owner-pill owner-individual">Individual · Owner: Banuja S (IT22188304)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>To be confirmed</dd></div><div><dt>File type:</dt><dd>PDF</dd></div></dl>
+              <p class="pending-note">Pending upload</p>
+            </article>
+            <article class="card doc-card is-available" data-category="theses" data-type="individual" data-owner="kobiram">
+              <div class="doc-top"><span class="doc-category">Theses</span><span class="badge badge-available">Available</span></div>
+              <h3>Individual Thesis – IoT Based Smart Fertilizer and Weather Aware Irrigation System</h3>
+              <p class="owner-pill owner-individual">Individual · Owner: Kobiram T (IT22245656)</p>
+              <dl class="doc-meta"><div><dt>Date:</dt><dd>October 2026</dd></div><div><dt>File type:</dt><dd>Google Doc (PDF download)</dd></div></dl>
+              <div class="doc-actions">
+                <a class="btn btn-primary btn-small" href="https://docs.google.com/document/d/1Ux2Htssq4rnGkD_zIE6oEMbtlX6X_j9wbs7r0Io-ke4/edit?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="View individual thesis of Kobiram T (opens in a new tab)">View</a>
+                <a class="btn btn-outline btn-small" href="https://docs.google.com/document/d/1Ux2Htssq4rnGkD_zIE6oEMbtlX6X_j9wbs7r0Io-ke4/export?format=pdf" target="_blank" rel="noopener noreferrer" aria-label="Download individual thesis of Kobiram T (PDF)">Download</a>
+              </div>
+            </article>
+
+          </div>
+          <p class="doc-count" aria-hidden="true"></p>
         </div>
+
+        <p class="folder-note">Looking for the original Google Drive folders? <a href="links.html">Open the Drive links page</a>.</p>
       </div>
     </section>
 
-    <!-- 5. PRESENTATIONS -->
+    <!-- =====================================================
+         5. PRESENTATIONS
+         ===================================================== -->
     <section id="presentations" class="section" aria-labelledby="presentations-title">
       <div class="container">
         <header class="section-head">
@@ -212,28 +794,176 @@
           <h2 id="presentations-title">Presentations</h2>
           <p class="section-lead">Slides presented at each assessment stage.</p>
         </header>
-        <div id="presentation-list" class="grid grid-2"></div>
+        <div class="grid grid-2">
+          <article class="card pres-card">
+            <div class="doc-top"><span class="pres-icon" aria-hidden="true">▶</span><span class="badge badge-available">Available</span></div>
+            <h3>Proposal Presentation</h3>
+            <dl class="doc-meta">
+              <div><dt>Assessment:</dt><dd>Project Proposal</dd></div>
+              <div><dt>Date:</dt><dd>16 March 2026</dd></div>
+              <div><dt>File type:</dt><dd>Google Slides (PPTX download)</dd></div>
+            </dl>
+            <div class="doc-actions">
+              <a class="btn btn-primary btn-small" href="https://docs.google.com/presentation/d/1AnUcnEPMPE9OWkuh6TEo6IyjFjtbjUKZ-9eUMV49gJQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="View Proposal Presentation slides (opens in a new tab)">View</a>
+              <a class="btn btn-outline btn-small" href="https://docs.google.com/presentation/d/1AnUcnEPMPE9OWkuh6TEo6IyjFjtbjUKZ-9eUMV49gJQ/export/pptx" target="_blank" rel="noopener noreferrer" aria-label="Download Proposal Presentation slides (PPTX)">Download</a>
+            </div>
+          </article>
+          <article class="card pres-card is-pending">
+            <div class="doc-top"><span class="pres-icon" aria-hidden="true">▶</span><span class="badge badge-pending">Pending upload</span></div>
+            <h3>Progress Presentation 1 (PP1)</h3>
+            <dl class="doc-meta">
+              <div><dt>Assessment:</dt><dd>Progress Presentation 1</dd></div>
+              <div><dt>Date:</dt><dd>To be confirmed</dd></div>
+              <div><dt>File type:</dt><dd>Slides</dd></div>
+            </dl>
+            <p class="pending-note">Pending upload</p>
+          </article>
+          <article class="card pres-card is-pending">
+            <div class="doc-top"><span class="pres-icon" aria-hidden="true">▶</span><span class="badge badge-pending">Pending upload</span></div>
+            <h3>Progress Presentation 2 (PP2)</h3>
+            <dl class="doc-meta">
+              <div><dt>Assessment:</dt><dd>Progress Presentation 2</dd></div>
+              <div><dt>Date:</dt><dd>To be confirmed</dd></div>
+              <div><dt>File type:</dt><dd>Slides</dd></div>
+            </dl>
+            <p class="pending-note">Pending upload</p>
+          </article>
+          <article class="card pres-card is-pending">
+            <div class="doc-top"><span class="pres-icon" aria-hidden="true">▶</span><span class="badge badge-pending">Pending upload</span></div>
+            <h3>Final Presentation</h3>
+            <dl class="doc-meta">
+              <div><dt>Assessment:</dt><dd>Final Assessment</dd></div>
+              <div><dt>Date:</dt><dd>To be confirmed</dd></div>
+              <div><dt>File type:</dt><dd>Slides</dd></div>
+            </dl>
+            <p class="pending-note">Pending upload</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- 6. ABOUT US -->
+    <!-- =====================================================
+         6. ABOUT US
+         Photo: put the image URL (https://lh3.googleusercontent.com/d/FILE_ID=w600)
+         in <img src>. The initials stay visible if the photo is missing or fails.
+         ===================================================== -->
     <section id="about" class="section section-cream" aria-labelledby="about-title">
       <div class="container">
         <header class="section-head">
           <p class="eyebrow">Our team</p>
           <h2 id="about-title">About Us</h2>
-          <p class="section-lead">The supervisory panel and research group members of <span data-bind="project.groupId"></span>.</p>
+          <p class="section-lead">The supervisory panel and research group members of R26-IT-087.</p>
         </header>
+
         <h3 class="subheading">Supervisor</h3>
-        <div id="supervisor-list" class="grid grid-2 people-grid"></div>
+        <div class="grid grid-2 people-grid">
+          <article class="card person-card">
+            <div class="person-photo" role="img" aria-label="Photograph of Ms. Shashika Lokuliyana, Supervisor">
+              <span class="avatar-initials" aria-hidden="true">SL</span>
+              <img src="https://lh3.googleusercontent.com/d/1x3sfDbMzdo9rTO3DQ6ONRsk2vMdB0B47=w600" alt="" width="120" height="120" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            </div>
+            <div class="person-info">
+              <h4>Ms. Shashika Lokuliyana</h4>
+              <p class="person-role">Supervisor</p>
+              <dl class="person-details">
+                <div><dt>Affiliation:</dt><dd>Sri Lanka Institute of Information Technology</dd></div>
+                <div><dt>Email:</dt><dd>To be confirmed</dd></div>
+              </dl>
+              <a class="photo-link" href="https://drive.google.com/file/d/1x3sfDbMzdo9rTO3DQ6ONRsk2vMdB0B47/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="View original photograph of Ms. Shashika Lokuliyana on Google Drive (opens in a new tab)">View photo</a>
+            </div>
+          </article>
+        </div>
+
         <h3 class="subheading">Co-supervisor</h3>
-        <div id="cosupervisor-list" class="grid grid-2 people-grid"></div>
+        <div class="grid grid-2 people-grid">
+          <article class="card person-card">
+            <div class="person-photo" role="img" aria-label="Initials placeholder for the co-supervisor (photograph not available)">
+              <span class="avatar-initials" aria-hidden="true">CS</span>
+            </div>
+            <div class="person-info">
+              <h4>To be confirmed</h4>
+              <p class="person-role">Co-supervisor</p>
+              <dl class="person-details">
+                <div><dt>Affiliation:</dt><dd>To be confirmed</dd></div>
+                <div><dt>Email:</dt><dd>To be confirmed</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+
         <h3 class="subheading">Research group members</h3>
-        <div id="member-list" class="grid grid-2 people-grid"></div>
+        <div class="grid grid-2 people-grid">
+          <article class="card person-card">
+            <div class="person-photo" role="img" aria-label="Initials of Thishoharini V (photograph not available)">
+              <span class="avatar-initials" aria-hidden="true">TV</span>
+            </div>
+            <div class="person-info">
+              <h4>Thishoharini V</h4>
+              <p class="person-role">Team Leader</p>
+              <dl class="person-details">
+                <div><dt>Student ID:</dt><dd>IT22281296</dd></div>
+                <div><dt>Affiliation:</dt><dd>Department of Information Technology, SLIIT</dd></div>
+                <div><dt>Specialization:</dt><dd>Information Technology</dd></div>
+                <div><dt>Email:</dt><dd>To be confirmed</dd></div>
+              </dl>
+              <div class="person-component"><strong>Research responsibility</strong><a href="#c-growth">Fruit Growth Stage Detection and Harvest Time Prediction</a></div>
+            </div>
+          </article>
+          <article class="card person-card">
+            <div class="person-photo" role="img" aria-label="Initials of Sowmiya A (photograph not available)">
+              <span class="avatar-initials" aria-hidden="true">SA</span>
+            </div>
+            <div class="person-info">
+              <h4>Sowmiya A</h4>
+              <p class="person-role">Group Member</p>
+              <dl class="person-details">
+                <div><dt>Student ID:</dt><dd>IT22549440</dd></div>
+                <div><dt>Affiliation:</dt><dd>Department of Information Technology, SLIIT</dd></div>
+                <div><dt>Specialization:</dt><dd>Information Technology</dd></div>
+                <div><dt>Email:</dt><dd>To be confirmed</dd></div>
+              </dl>
+              <div class="person-component"><strong>Research responsibility</strong><a href="#c-quality">Fruit Quality Grading and Waste Utilization Analysis</a></div>
+            </div>
+          </article>
+          <article class="card person-card">
+            <div class="person-photo" role="img" aria-label="Initials of Banuja S (photograph not available)">
+              <span class="avatar-initials" aria-hidden="true">BS</span>
+            </div>
+            <div class="person-info">
+              <h4>Banuja S</h4>
+              <p class="person-role">Group Member</p>
+              <dl class="person-details">
+                <div><dt>Student ID:</dt><dd>IT22188304</dd></div>
+                <div><dt>Affiliation:</dt><dd>Department of Information Technology, SLIIT</dd></div>
+                <div><dt>Specialization:</dt><dd>Information Technology</dd></div>
+                <div><dt>Email:</dt><dd>To be confirmed</dd></div>
+              </dl>
+              <div class="person-component"><strong>Research responsibility</strong><a href="#c-disease">Fruit Disease Detection and Treatment Recommendation</a></div>
+            </div>
+          </article>
+          <article class="card person-card">
+            <div class="person-photo" role="img" aria-label="Initials of Kobiram T (photograph not available)">
+              <span class="avatar-initials" aria-hidden="true">KT</span>
+            </div>
+            <div class="person-info">
+              <h4>Kobiram T</h4>
+              <p class="person-role">Group Member</p>
+              <dl class="person-details">
+                <div><dt>Student ID:</dt><dd>IT22245656</dd></div>
+                <div><dt>Affiliation:</dt><dd>Department of Information Technology, SLIIT</dd></div>
+                <div><dt>Specialization:</dt><dd>Information Technology</dd></div>
+                <div><dt>Email:</dt><dd>To be confirmed</dd></div>
+              </dl>
+              <div class="person-component"><strong>Research responsibility</strong><a href="#c-resource">Intelligent Fertilizer Recommendation and Irrigation Decision System</a></div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- 7. CONTACT US -->
+    <!-- =====================================================
+         7. CONTACT US
+         ===================================================== -->
     <section id="contact" class="section" aria-labelledby="contact-title">
       <div class="container">
         <header class="section-head">
@@ -244,28 +974,38 @@
         <div class="grid grid-contact">
           <div class="card">
             <h3>Group contact details</h3>
-            <dl id="contact-details" class="facts"></dl>
+            <dl class="facts">
+              <div><dt>Group ID</dt><dd>R26-IT-087</dd></div>
+              <div><dt>Group email</dt><dd>To be confirmed</dd></div>
+              <div><dt>Institution</dt><dd>Sri Lanka Institute of Information Technology (SLIIT)</dd></div>
+              <div><dt>Department</dt><dd>Department of Information Technology, Faculty of Computing</dd></div>
+            </dl>
             <h4 class="minor-heading">Members</h4>
-            <ul id="contact-members" class="contact-members"></ul>
+            <ul class="contact-members">
+              <li>Thishoharini V (IT22281296) – email to be confirmed</li>
+              <li>Sowmiya A (IT22549440) – email to be confirmed</li>
+              <li>Banuja S (IT22188304) – email to be confirmed</li>
+              <li>Kobiram T (IT22245656) – email to be confirmed</li>
+            </ul>
           </div>
-          <form class="card email-form" id="email-form" novalidate>
+          <div class="card email-card">
             <h3>Email template</h3>
-            <div class="filter-field">
-              <label for="email-to">To</label>
-              <input type="email" id="email-to" autocomplete="off">
-              <p class="hint" id="email-to-hint"></p>
-            </div>
-            <div class="filter-field">
-              <label for="email-subject">Subject</label>
-              <input type="text" id="email-subject">
-            </div>
-            <div class="filter-field">
-              <label for="email-body">Message</label>
-              <textarea id="email-body" rows="9"></textarea>
-            </div>
-            <a id="mailto-link" class="btn btn-primary" href="mailto:">Open email app</a>
-            <p class="hint">This opens your device's email app with the message filled in. Nothing is sent from this website.</p>
-          </form>
+            <p class="template-label">Subject</p>
+            <p class="email-template">Enquiry about research project R26-IT-087</p>
+            <p class="template-label">Message</p>
+            <pre class="email-template">Dear R26-IT-087 Research Group,
+
+My name is [your name] from [your organisation].
+
+I am writing about your research project "An AI-Based Intelligent Farming System for Improving Pomegranate Yield and Quality".
+
+[Your message]
+
+Kind regards,
+[your name]</pre>
+            <a class="btn btn-primary" href="mailto:?subject=Enquiry%20about%20research%20project%20R26-IT-087&amp;body=Dear%20R26-IT-087%20Research%20Group%2C%0D%0A%0D%0AMy%20name%20is%20%5Byour%20name%5D%20from%20%5Byour%20organisation%5D.%0D%0A%0D%0AI%20am%20writing%20about%20your%20research%20project%20%22An%20AI-Based%20Intelligent%20Farming%20System%20for%20Improving%20Pomegranate%20Yield%20and%20Quality%22.%0D%0A%0D%0A%5BYour%20message%5D%0D%0A%0D%0AKind%20regards%2C%0D%0A%5Byour%20name%5D">Open email app</a>
+            <p class="hint">This opens your device's email app with the template filled in. The group email address is to be confirmed, so add the recipient in your email app. Nothing is sent from this website.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -273,14 +1013,10 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p><strong data-bind="project.groupId"></strong> · <span data-bind="project.title"></span></p>
-      <p><span data-bind="project.department"></span>, <span data-bind="project.institution"></span></p>
-      <p><a href="#home">Back to top</a></p>
+      <p><strong>R26-IT-087</strong> · An AI-Based Intelligent Farming System for Improving Pomegranate Yield and Quality</p>
+      <p>Department of Information Technology, Sri Lanka Institute of Information Technology (SLIIT)</p>
+      <p><a href="links.html">Google Drive links</a> · <a href="#home">Back to top</a></p>
     </div>
   </footer>
-
-  <script src="data/content.js"></script>
-  <script src="data/drive-links.js"></script>
-  <script src="js/main.js"></script>
 </body>
 </html>
